@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+.navBar {
+  background:black;
+  height:6em;
+  overflow: hidden;
+}
+
+.innerNavBar {
+  height:100%;
+  vertical-align: middle;
+  padding:1em;
+  width:90%;
+  min-width:1000px;
+  margin:auto;
+  text-align: center;
+}
+
+
+span.bar {
+  display: block;
+  height: 11px;
+  width:3em;
+  border-bottom: 0.25em solid black;
+}
+
+.burgerArrow {
+  display:inline-block;
+  float:right;
+}
+
+.title {
+  display: inline-block;
+  font-family: Dosis, "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 5em;
+}
+
+span.arrow {
+    display: inline-block;
+    height: 1.7em;
+    width: 1.7em;
+    border-bottom: solid 0.35em black;
+    border-right: solid 0.35em black;
+    transform: rotate(45deg);
+}
+
+.burgerArrow {
+    display: inline-block;
+    width: auto;
+    margin-top: 3em;
+    margin-right:1em;
+    text-align: center;
+}
+
+.navBannerInner {
+  width:90%;
+  margin:auto;
+}

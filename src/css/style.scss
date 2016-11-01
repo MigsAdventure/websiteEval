@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+@import 'nav-button';
+@import 'nav-bar';
+
+@mixin planeStyle {
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position-y: 0em;
+  height:100%;
+  width:100%;
+  position: absolute;
+  top:20%;
+  bottom:50%;
+  right:auto;
+  left:auto;
+}
+
+/* AutoPrefixer - atuomatically adds vendor prefixes */
+
+$maincolor : #36c3e5;
+html {
+  height:100%;
+}
+body {
+  height:100%;
+  background: $maincolor;
+}
+
+@keyframes bounce {
+
+  50% {
+    transform: translateY(5em);
+  }
+  100% {
+    transform: translateY(0em);
+  }
+}
+
+@keyframes bounceShadow {
+  0% {
+
+  }
+  50% {
+    transform: translateY(10em);
+  }
+  100% {
+    transform: translateY(0em);
+  }
+}
+
+.plane {
+  background: url('http://oddbee.com/img/plane-desktop.png') center center;
+  @include planeStyle;
+  animation: bounce 4s infinite;
+}
+
+.shadow {
+  @include planeStyle;
+  background: url('http://oddbee.com/img/plane-reflection-desktop.png') center center;
+  background-repeat: no-repeat;
+  animation: bounceShadow 4s infinite;
+}
