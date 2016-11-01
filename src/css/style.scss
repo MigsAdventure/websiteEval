@@ -11,7 +11,7 @@
   height:100%;
   width:100%;
   position: absolute;
-  top:20%;
+  top:15em;
   bottom:50%;
   right:auto;
   left:auto;
@@ -40,14 +40,21 @@ body {
 
 @keyframes bounceShadow {
   0% {
-
+  transform: translateY(7em);
   }
   50% {
-    transform: translateY(10em);
+    transform: translateY(0em);
+    transform: scale(.7);
   }
   100% {
-    transform: translateY(0em);
+    transform: translateY(7em);
   }
+}
+
+.planeContainer {
+  position: relative;
+  height:100%;
+  width:100%;
 }
 
 .plane {
